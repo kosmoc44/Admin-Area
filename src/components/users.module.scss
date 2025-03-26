@@ -1,0 +1,188 @@
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #1A1A2F;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.searchContainer {
+    flex: 1;
+    max-width: 500px;
+}
+
+.searchInput {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+
+    &:focus-within {
+        background: rgba(255, 255, 255, 0.15);
+        box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5);
+    }
+}
+
+.searchIcon {
+    color: #718096;
+    margin-right: 0.5rem;
+}
+
+.inputField {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+
+    &::placeholder {
+        color: #A0AEC0;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.addButton {
+    background: #4299E1;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    outline: none;
+    border: none;
+
+    &:hover {
+        background: #3182CE;
+        transform: translateY(-1px);
+    }
+}
+
+.usersTable {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1E1E3A;
+    border-radius: 8px;
+    overflow: hidden;
+
+    th,
+    td {
+        padding: 1rem;
+        text-align: left;
+    }
+
+    th {
+        background: #2D2D5A;
+        color: #CBD5E0;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.875rem;
+    }
+
+    tr {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+    }
+
+    td {
+        color: #CBD5E0;
+        font-size: 0.95rem;
+    }
+}
+
+.role {
+    background: rgba(66, 153, 225, 0.15);
+    color: #4299E1;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.statusActive {
+    background: rgba(72, 187, 120, 0.15);
+    color: #48BB78;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.viewButton {
+    background: #48BB78;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: #38A169;
+    }
+}
+
+.deleteButton {
+    background: #F56565;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: #E53E3E;
+    }
+}
+
+.pagination {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    &_button {
+        background: #CBD5E0;
+        color: #3182CE;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+
+        &:disabled{
+            background: #CBD5E0;
+            color: #3182CE;
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+    }
+}
+

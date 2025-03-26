@@ -1,0 +1,13 @@
+@use '../AddUser/addUser.module.scss' as *;
+
+.modalHeader h3 {
+    color: #48BB78; 
+}
+
+.submitButton {
+    background: #48BB78;
+
+    &:hover {
+        background: #38A169;
+    }
+}
